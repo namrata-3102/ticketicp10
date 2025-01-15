@@ -3,9 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>event ticket</title>
 </head>
+<style>
+    .card{
+        border: 0.5px dashed black;
+        height: 340px;
+        width: 800px;
+        border-radius: 20px;
+        margin: 50px auto;
+        box-shadow: 0 0 5px grey;
+        display: flex;
+        font-family: sans-serif;
+    }
+    .student-part{
+        width: 40%;
+        border-radius: 20px;
+        box-shadow: 0 0 4px black;
+        border: 0.5px solid black;
+        border-right: none;
+        text-align: center;
+       background-color: rgb(232, 169, 211);
+        
+    }
+    
+    .event-part{
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: 0 0 4px black;
+        border: 0.5px solid black;
+        border-left: dashed;
+        text-align: center;
+        background-color: rgb(232, 169, 211)
+    }
+    .college-logo{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .ticket{
+        margin-left: 150px;
+        font-family: 'Courier New';
+    }
+    .ticket2{
+        margin-left: 190px;
+        font-family: 'Courier New';
+    }
+    .para{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    /* mobile*/
+    @media (max-width: 600px){
+        .card{
+            flex-direction: column;
+        }
+      .student-part{
+        width:400px;
+        height:auto;
+        
+      }
+      .event-part{
+        width:400px;
+        height:auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    }
+    
+    /*tablet*/
+    @media (min-width:601px) and (max-width:800px){
+        .card{
+            flex-direction: column;
+        }
+        .student-part{
+        width:500px;
+        height: auto;
+        
+      }
+      .event-part{
+        width:500px;
+        height: auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    }
+
+    /*laptop*/
+    @media (min-width:801) and (max-width: 1024px){
+        .card{
+            flex-direction: column;
+        }
+        .student-part{
+        width:600px;
+        height: auto;
+        
+      }
+      .event-part{
+        width:600px;
+        height: auto;
+        border-top: dashed;
+        border-left: none;
+      }
+    } 
+  .venue{
+    color: rgb(2, 2, 5);
+    font-size: 20px;
+  }
+  .para{
+    color: rgb(7, 80, 60);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+</style>
 <body>
+    
+    <div class="card">
+       <div class="student-part">
+        <span class="ticket">Ticket no:201><br>
+        <img src="https://img.jagranjosh.com/images/2024/April/1042024/Logo_of_Sir_Visvesvaraya_Institute_of_Technology_Nashik_Logo.png"  class="college-logo"alt=" img">
+        <p class="para">Event: Freshers Party 2K25</p>
+        <p>Namrata Magar</p>
+        <p>You are inviting our college freshers Party</p>
+        <p>So Please Must Come</p>
+        <span class="venue">Venue:SVIT Enginnering College</span>
+        <p>Date: 14/01/2025</p>
+       </div>
+
+       <div class="event-part">
+        <span class="ticket2">Ticket no:202><br>
+        <img src="https://img.jagranjosh.com/images/2024/April/1042024/Logo_of_Sir_Visvesvaraya_Institute_of_Technology_Nashik_Logo.png"  class="college-logo"alt=" img">
+        <p class="para">Event: Freshers Party 2K25</p>
+        <p>Miss.Namrata Magar TE(computer)</p>
+        <p>You are inviting our college freshers Party</p>
+        <p>so you are specially invited</p>
+        <span class="venue">Venue:SVIT Enginnering College</span>
+        <p>Date: 14/01/2025</p>
+       </div> 
+    </div>
     
 </body>
 </html>
